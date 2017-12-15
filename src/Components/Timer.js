@@ -94,6 +94,8 @@ onTick(){
     }
     }
 
+
+   if(this.state.isSession == false){
     if(this.state.breakMinutes === 0 && this.state.seconds === 0){
       if(this.props.sessionMinutes > 0){
       this.setState({
@@ -111,6 +113,7 @@ onTick(){
       });
     }
     }
+  }
   }
 }
 
@@ -206,6 +209,5 @@ console.log(this.state.time);
 }
 
 }
-
 
 export default Timer;
